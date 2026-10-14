@@ -1,0 +1,6 @@
+# Ignore HTML and CSS from language statistics calculation
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+
+# Prioritize JavaScript as the primary language for this repository
+*.js linguist-detectable=true

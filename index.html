@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nura Headphones</title>
+  <meta name="description" content="Nura wireless headphones landing page. A practice project built with Bootstrap 5.">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand nura-logo" href="#top">nura<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="#specs">Specs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-nura" href="#buy">Buy now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <p class="eyebrow">New: Nura One</p>
+            <h1 class="display-4 fw-bold">Sound that follows you everywhere.</h1>
+            <p class="lead text-secondary">
+              Wireless headphones with deep bass, soft ear cushions and a battery that lasts the whole week.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#buy" class="btn btn-nura btn-lg">Buy now</a>
+              <a href="#features" class="btn btn-outline-nura btn-lg">See features</a>
+            </div>
+            <p class="small text-secondary mt-3 mb-0">Free delivery. 30-day returns.</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/hero-headphones.jpg" class="img-fluid rounded-4 w-100" alt="Nura One headphones" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5" id="features">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Why you will like them</h2>
+          <p class="text-secondary">Four things we spent the most time on.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card feature-card h-100">
+              <div class="card-body">
+                <div class="feature-number">1</div>
+                <h3 class="h5">Deep, clear sound</h3>
+                <p class="text-secondary mb-0">40 mm drivers give strong bass without losing the voices and details.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card feature-card h-100">
+              <div class="card-body">
+                <div class="feature-number">2</div>
+                <h3 class="h5">Noise cancelling</h3>
+                <p class="text-secondary mb-0">Turn on noise cancelling on a bus or a train, turn it off to hear around you.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card feature-card h-100">
+              <div class="card-body">
+                <div class="feature-number">3</div>
+                <h3 class="h5">40 hour battery</h3>
+                <p class="text-secondary mb-0">Charge once and listen all week. A 10 minute charge gives about 4 hours.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card feature-card h-100">
+              <div class="card-body">
+                <div class="feature-number">4</div>
+                <h3 class="h5">Soft and light</h3>
+                <p class="text-secondary mb-0">Memory foam cushions and a light frame, so they stay comfortable for hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product with colour choice -->
+    <section class="py-5 bg-soft" id="product">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <img id="product-image" src="images/product-midnight.jpg" class="img-fluid rounded-4 w-100" alt="Nura One in Midnight" onerror="this.style.display='none'">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Nura One</h2>
+            <p class="text-secondary">Pick your colour. Every colour has the same sound and the same battery.</p>
+
+            <p class="mb-2">Colour: <strong id="colour-name">Midnight</strong></p>
+            <div class="colour-picker mb-4" id="colour-picker">
+              <button type="button" class="swatch active" data-colour="midnight" data-name="Midnight" style="background:#1d2340" aria-label="Midnight"></button>
+              <button type="button" class="swatch" data-colour="lilac" data-name="Lilac" style="background:#b9a4f0" aria-label="Lilac"></button>
+              <button type="button" class="swatch" data-colour="sand" data-name="Sand" style="background:#e3cfae" aria-label="Sand"></button>
+            </div>
+
+            <p class="price">$149 <small class="text-secondary fw-normal">one price, all colours</small></p>
+            <a href="#buy" class="btn btn-nura btn-lg">Choose this one</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="py-5" id="specs">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold text-center mb-4">The details</h2>
+            <table class="table">
+              <tbody>
+                <tr><th scope="row">Drivers</th><td>40 mm dynamic</td></tr>
+                <tr><th scope="row">Connection</th><td>Bluetooth 5.3 or the 3.5 mm cable</td></tr>
+                <tr><th scope="row">Battery</th><td>Up to 40 hours (30 hours with noise cancelling on)</td></tr>
+                <tr><th scope="row">Charging</th><td>USB-C</td></tr>
+                <tr><th scope="row">Weight</th><td>250 g</td></tr>
+                <tr><th scope="row">In the box</th><td>Headphones, carry pouch, USB-C cable, audio cable</td></tr>
+              </tbody>
+            </table>
+            <p class="small text-secondary">These are sample details for a practice landing page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-5 bg-soft" id="reviews">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">What people say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p>"I use them on the train every day. The noise cancelling really helps."</p>
+                <p class="mb-0 fw-bold">Sara, designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p>"Very comfortable. I forget I am wearing them after an hour."</p>
+                <p class="mb-0 fw-bold">Daniel, student</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <p>"The battery is great. I charge them about once a week."</p>
+                <p class="mb-0 fw-bold">Priya, teacher</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="small text-secondary text-center mt-3 mb-0">Sample reviews written for this practice page.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold text-center mb-4">Questions</h2>
+            <div class="accordion" id="faq">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1">Can I use them with a cable?</button>
+                </h3>
+                <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                  <div class="accordion-body">Yes. If the battery runs out you can plug in the audio cable and keep listening.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2">How long is delivery?</button>
+                </h3>
+                <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-body">Usually 3 to 5 working days. Delivery is free.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3">Can I return them?</button>
+                </h3>
+                <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                  <div class="accordion-body">Yes, you have 30 days to return them for a full refund.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buy / email form -->
+    <section class="py-5 buy-section" id="buy">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <img src="images/lifestyle.jpg" class="img-fluid rounded-4 w-100" alt="Person enjoying music" onerror="this.style.display='none'">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold">Get yours</h2>
+            <p>Leave your email and we will send you the order link when Nura One is back in stock.</p>
+
+            <form id="buy-form" novalidate>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <button type="submit" class="btn btn-nura">Notify me</button>
+            </form>
+            <div class="alert alert-success mt-3 mb-0" id="buy-success" hidden>Thank you! This is a demo, so your email was not saved.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-4 border-top text-center small text-secondary">
+    <div class="container">
+      <p class="mb-0">&copy; <span id="year">2026</span> Nura. A practice project built with Bootstrap 5.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

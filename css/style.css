@@ -1,0 +1,116 @@
+/* A few small changes on top of Bootstrap. No animations. */
+
+:root {
+  --nura: #6c47e0;
+  --nura-dark: #5636bd;
+  --soft: #f4f1fd;
+}
+
+body {
+  color: #2a2740;
+}
+
+.nura-logo {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #1d1a33;
+}
+
+.nura-logo span {
+  color: var(--nura);
+}
+
+.bg-soft {
+  background: var(--soft);
+}
+
+.hero {
+  background: var(--soft);
+}
+
+.eyebrow {
+  color: var(--nura);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+/* Buttons */
+.btn-nura {
+  background: var(--nura);
+  border-color: var(--nura);
+  color: #fff;
+}
+
+.btn-nura:hover {
+  background: var(--nura-dark);
+  border-color: var(--nura-dark);
+  color: #fff;
+}
+
+.btn-outline-nura {
+  border-color: var(--nura);
+  color: var(--nura);
+}
+
+.btn-outline-nura:hover {
+  background: var(--nura);
+  color: #fff;
+}
+
+/* Feature cards */
+.feature-card {
+  border: 1px solid #e6e1f7;
+}
+
+.feature-number {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 14px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--nura);
+  font-weight: bold;
+}
+
+/* Colour picker */
+.swatch {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #c9c2e6;
+  cursor: pointer;
+}
+
+.swatch.active {
+  box-shadow: 0 0 0 3px var(--nura);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.price small {
+  font-size: 0.9rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--soft);
+  color: var(--nura-dark);
+}
+
+.accordion-button:focus,
+.form-control:focus {
+  border-color: var(--nura);
+  box-shadow: 0 0 0 0.2rem rgba(108, 71, 224, 0.2);
+}
+
+.buy-section {
+  background: var(--soft);
+}
